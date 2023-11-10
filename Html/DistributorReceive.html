@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor Receive</title>
+    <script src="../JS/kit.fontawesome.js"></script>
+    <script src="../JS/xlsx.full.min.js"></script>
+    <script src="../JS/jquery-3.1.1.min.js"></script>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/jquery-datatables.min.js"></script>
+    <script src="../JS/datatables.button.min.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap.min-4.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min-5.css">
+    <link rel="stylesheet" href="../CSS/datatables.min.css">
+    <link rel="stylesheet" href="../CSS/databtables.bootstrap.buttons.min.css">
+    <link rel="stylesheet" href="../CSS/sideBarStyle.css">
+    <link rel="stylesheet" href="../CSS/datatableStyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="dashboard.html">INOVI SOLUTIONS</a>
+                </div>
+                <ul id="sideBarMenus" class="sidebar-nav">
+                    <!-- Generated SideBar -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navRightMenus">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <form class="formTopbar">
+                            <div class="row" id="inputContainer" class="folded">
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">DN</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BRAND</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">BOX</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">COUNTRY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">DN REMARK</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">MODEL</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SAP DELIVERY DATE</div>
+                                        <input type="date" class="form-control">
+                                        _
+                                        <input type="date" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">CATEGORY</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">MARKET NAME</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">STATUS</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">MATERIAL ID</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">SAP CUSTOMER ID</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">IMEI</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">CUSTOMER REGION</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-text col-sm-4 txtSize">LOGISTIC NUMBER</div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-inline justify-content-between col-md-12 mb-2">
+                            <div class="radioButton mb-2">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Mobile</label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Other</label>
+                                </div>
+                            </div>
+
+                            <div class="button mb-2">
+                                <button id="toggleButton"> V Unfold</button>
+                                <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                        class="fa-solid fa-circle-notch"></i> Quick Recieve</button>
+                                <button type="button" class="btn btn-outline-success btn-sm"><i
+                                        class="fa-regular fa-note-sticky"></i> Stock-In by Scan</button>
+                                <button type="button" class="btn btn-outline-dark btn-sm"><i
+                                        class="fa-regular fa-share-from-square"></i> Export</button>
+                                <button id="uploadButton" class="btn btn-outline-dark btn-sm"><i
+                                        class="fa-solid fa-arrow-up-from-bracket"></i> Import Recieve</button>
+                                <input type="file" id="excelFileInput" style="display: none;">
+                            </div>
+                        </div>
+
+
+                        <!-------------- Table ----------------->
+                        <div class="container-fluid">
+                            <div class="tablecard small col-md-12">
+                                <table id="myTable" class="table table-striped table-bordered small">
+                                    <thead>
+                                        <tr class="font-weight-bold">
+                                            <td>DN</td>
+                                            <td>Status</td>
+                                            <td>SAP Delivery Date</td>
+                                            <td>Product</td>
+                                            <td>Item</td>
+                                            <td>Brand</td>
+                                            <td>Model</td>
+                                            <td>Category</td>
+                                            <td>Series</td>
+                                            <td>Market Name</td>
+                                            <td>Order Quantity</td>
+                                            <td>Total Quantity</td>
+                                            <td>Recieved Quantity</td>
+                                            <td>Unrecieved Quantity</td>
+                                            <td>Return Quantity</td>
+                                            <td>Total Amount</td>
+                                            <td>Delivery Country</td>
+                                            <td>SAP Customer ID</td>
+                                            <td>Customer Name</td>
+                                            <td>Country</td>
+                                            <td>Customer Region1</td>
+                                            <td>Customer Region2</td>
+                                            <td>Customer Region3</td>
+                                            <td>Logistic Number</td>
+                                            <td>DN Remark</td>
+                                            <td>DN Create Date</td>
+                                            <td>Update Date</td>
+                                            <td>Operation</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../JS/dataTableScript.js"></script>
+    <script src="../JS/datatables.bootstrap.buttons.js"></script>
+    <script src="../JS/bootstrap.bundle.min-5.js"></script>
+    <script src="../JS/sideBarScript.js"></script>
+
+</body>
+
+</html>

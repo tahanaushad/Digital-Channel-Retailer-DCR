@@ -1,0 +1,274 @@
+[
+    {
+        "ID": "1",
+        "name": "Dashboard",
+        "icon": "fas fa-tachometer-alt",
+        "hasChildren": false,
+        "url": "dashboard.html",
+        "parentID": ""
+    },
+    {
+        "ID": "2",
+        "name": "Basic Data",
+        "icon": "fas fa-columns",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "3",
+        "name": "Import Data",
+        "icon": "",
+        "hasChildren": false,
+        "url": "ImportData.html",
+        "parentID": "2"
+    },
+    {
+        "ID": "4",
+        "name": "Export Data",
+        "icon": "",
+        "hasChildren": false,
+        "url": "ExportData.html",
+        "parentID": "2"
+    },
+    {
+        "ID": "5",
+        "name": "Model & Price",
+        "icon": "fa-solid fa-tag",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "6",
+        "name": "Customer Price",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerPrice.html",
+        "parentID": "5"
+    },
+    {
+        "ID": "7",
+        "name": "Account",
+        "icon": "fas fa-user",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "8",
+        "name": "Warehouse",
+        "icon": "",
+        "hasChildren": false,
+        "url": "Warehouse.html",
+        "parentID": "7"
+    },
+    {
+        "ID": "9",
+        "name": "Customer Permission",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerPermission.html",
+        "parentID": "7"
+    },
+    {
+        "ID": "10",
+        "name": "Purchase",
+        "icon": "fa fa-shopping-cart",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "11",
+        "name": "Distributor Receive",
+        "icon": "",
+        "hasChildren": false,
+        "url": "DistributorReceive.html",
+        "parentID": "10"
+    },
+    {
+        "ID": "12",
+        "name": "Inbound Order",
+        "icon": "",
+        "hasChildren": false,
+        "url": "InboundOrder.html",
+        "parentID": "10"
+    },
+    {
+        "ID": "13",
+        "name": "Sales",
+        "icon": "fa-solid fa-scale-balanced",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "14",
+        "name": "Delivery Order",
+        "icon": "",
+        "hasChildren": false,
+        "url": "DeliveryOrder.html",
+        "parentID": "13"
+    },
+    {
+        "ID": "15",
+        "name": "Inventory",
+        "icon": "fa-solid fa-clipboard-check",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "16",
+        "name": "Customer Inventory Query",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerInventoryQuery.html",
+        "parentID": "15"
+    },
+    {
+        "ID": "17",
+        "name": "Inventory Initialization",
+        "icon": "",
+        "hasChildren": false,
+        "url": "InventoryInitialization.html",
+        "parentID": "15"
+    },
+    {
+        "ID": "18",
+        "name": "IMEI Inventory Query New",
+        "icon": "",
+        "hasChildren": false,
+        "url": "ImeiInventoryQueryNew.html",
+        "parentID": "15"
+    },
+    {
+        "ID": "19",
+        "name": "Customer Transfer",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerTransfer.html",
+        "parentID": "15"
+    },
+    {
+        "ID": "20",
+        "name": "Inventory Losses Check",
+        "icon": "",
+        "hasChildren": false,
+        "url": "InventoryLossesCheck.html",
+        "parentID": "15"
+    },
+    {
+        "ID": "21",
+        "name": "Report Analysis",
+        "icon": "fa fa-file",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "22",
+        "name": "IMEI Purchase Query New",
+        "icon": "",
+        "hasChildren": false,
+        "url": "IMEIPurchaseQueryNew.html",
+        "parentID": "21"
+    },
+    {
+        "ID": "23",
+        "name": "IMEI Sales Query New",
+        "icon": "",
+        "hasChildren": false,
+        "url": "IMEISalesQueryNew.html",
+        "parentID": "21"
+    },
+    {
+        "ID": "24",
+        "name": "IMEI Return Query",
+        "icon": "",
+        "hasChildren": false,
+        "url": "IMEIReturnQuery.html",
+        "parentID": "21"
+    },
+    {
+        "ID": "25",
+        "name": "Customer Sales Query",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerSalesQuery.html",
+        "parentID": "21"
+    },
+    {
+        "ID": "26",
+        "name": "Customer PSI",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerPSI.html",
+        "parentID": "21"
+    },
+    {
+        "ID": "27",
+        "name": "Customer Activation PSI",
+        "icon": "",
+        "hasChildren": false,
+        "url": "CustomerActivationPSI.html",
+        "parentID": "21"
+    },
+    {
+        "ID": "28",
+        "name": "IMEI Query",
+        "icon": "fa-solid fa-qrcode",
+        "hasChildren": false,
+        "url": "IMEIQuery.html",
+        "parentID": ""
+    },
+    {
+        "ID": "29",
+        "name": "Master",
+        "icon": "fa-solid fa-brain",
+        "hasChildren": true,
+        "url": "",
+        "parentID": ""
+    },
+    {
+        "ID": "30",
+        "name": "Business Partners",
+        "icon": "",
+        "hasChildren": false,
+        "url": "BusinessPartners.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "31",
+        "name": "Product",
+        "icon": "",
+        "hasChildren": false,
+        "url": "Product.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "32",
+        "name": "User",
+        "icon": "",
+        "hasChildren": false,
+        "url": "User.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "33",
+        "name": "IMEI",
+        "icon": "",
+        "hasChildren": false,
+        "url": "IMEI.html",
+        "parentID": "29"
+    },
+    {
+        "ID": "34",
+        "name": "WarehouseAdd",
+        "icon": "",
+        "hasChildren": false,
+        "url": "WarehouseAdd.html",
+        "parentID": "29"
+    }
+]
