@@ -1,3 +1,5 @@
+const pathname = window.location.pathname.split('/')[2];
+
 $.ajax({
     "url": "../JSON/sidebar.json",
     type: "GET",
@@ -28,23 +30,32 @@ $.ajax({
                         <a href="${resp[index].url}" class="sidebar-link">${resp[index].name}</a>
                         </li>`;
                     }
-
                 }
                 tempMenu += `</ul></li>`;
             }
+            if (resp[i].url == pathname && resp[i].parentName == "") {
+                $('#url').html(resp[i].name);
+            }
+            else if(resp[i].url == pathname) {
+                $('#url').html(resp[i].parentName + ' <i class="fas fa-angle-right"></i> ' + resp[i].name);
+            }
         }
+        
         $('#sideBarMenus').html(tempMenu);
     }
 })
 
-
-
-
-const toggler = document.querySelector(".btn");
-toggler.addEventListener("click", function () {
+function collapSidebar() {
     document.querySelector("#sidebar").classList.toggle("collapsed");
-});
+}
 
+$('#toggle_btn').on("click", function () {
+    collapSidebar();
+})
+
+$('.add_btn').on("click", function () {
+    collapSidebar();
+})
 
 $(window).on('resize', function (e) {
     var windowWidth = $(window).width();
@@ -54,22 +65,18 @@ $(window).on('resize', function (e) {
     }
 });
 
-
-// Fold/Unfold
+var container = document.getElementById('inputContainer');
+container.style.display = 'none';
 
 $(document).ready(function () {
     $('#toggleButton').click(function () {
-        var inputContainer = $('#inputContainer');
-        var button = $('#toggleButton');
-
-        if (inputContainer.hasClass('unfolded')) {
-            inputContainer.removeClass('unfolded').addClass('folded');
-            // button.find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            button.text('V Unfold');
-        } else {
-            inputContainer.removeClass('folded').addClass('unfolded');
-            // button.find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-            button.text('Ʌ Fold');
+        if (container.style.display == 'none') {
+            container.style.display = 'flex';
+            $('#toggleButton').html("<i class='fa-solid fa-chevron-up'></i> Fold");
         }
-    });
-});
+        else {
+            container.style.display = 'none';
+            $('#toggleButton').html("<i class='fa-solid fa-chevron-down'></i> Unfold");
+        }
+    })
+})

@@ -37,9 +37,10 @@
         <div class="main">
             <nav class="navbar navbar-expand px-3 border-bottom">
                 <!-- Button for sidebar toggle -->
-                <button class="btn" type="button">
+                <button class="btn mr-3" type="button" id="toggle_btn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <span id="url"></span>
                 <div id="navRightMenus">
                     <ul class="navbar-nav">
                         <li class="dropdown">
@@ -60,7 +61,7 @@
                 <div class="container-fluid">
                     <div class="mb-3">
                         <form class="formTopbar">
-                            <div class="row" id="inputContainer" class="folded">
+                            <div class="row"  id="inputContainer">
                                 <div class="col-md-4">
                                     <div class="input-group input-group-sm mb-2">
                                         <div class="input-group-text col-sm-4 txtSize">CUSTOMER</div>
@@ -178,7 +179,7 @@
 
                     <div class="form-inline justify-content-end col-md-12 mt-2 mb-2">
                         <div class="button mb-2">
-                            <button id="toggleButton"> V Unfold</button>
+                            <button id="toggleButton"><i class="fa-solid fa-chevron-down"></i> Unfold</button>
                             <button type="button" class="btn btn-outline-danger btn-sm"><i
                                     class="fa-regular fa-share-from-square"></i> Export</button>
                             <button id="uploadButton" class="btn btn-outline-dark btn-sm"><i
@@ -223,7 +224,7 @@
                                         <td>Sales Region1</td>
                                         <td>Sales Region2</td>
                                         <td>Sales Region3</td>
-                                        <td>sales Region4</td>
+                                        <td>Sales Region4</td>
                                         <td>Sales Region5</td>
                                         <td>Dealer Category</td>
                                         <td>Factory Delivery Country</td>

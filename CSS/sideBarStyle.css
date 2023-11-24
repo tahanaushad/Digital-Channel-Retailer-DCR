@@ -149,7 +149,7 @@ a.sidebar-link {
     text-decoration: none;
 }
 
-.sidebar-logo a:hover{
+.sidebar-logo a:hover {
     text-decoration: none;
 }
 
@@ -167,6 +167,9 @@ a.sidebar-link {
     background: #555;
 }
 
+textarea {
+    resize: none;
+}
 
 /* Fold/Unfold */
 
@@ -176,24 +179,20 @@ a.sidebar-link {
     border: none;
     font-size: small;
     background-color: transparent;
-}
-
-#toggleButton:hover {
-    background-color:transparent;
     color: rgb(10, 83, 240);
 }
+/* 
 
+@keyframes easeOutElastic {
+    0% {
+        height: translateY(100%);
+    }
+
+    100% {
+        height: translateY(0%);
+    }
+}
 
 #inputContainer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.8s ease;
-}
-
-#inputContainer.folded {
-    max-height: 0;
-}
-
-#inputContainer.unfolded {
-    max-height: 400px;
-}
+    animation: easeOutElastic 0.5s forwards;
+} */
